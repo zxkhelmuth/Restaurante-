@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+header{
+    background-color: #383c44;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+header > nav > ul{
+    display: flex;
+    gap: 20px;
+}
+
+header > nav > ul > li{
+    list-style: none;
+}
+
+header > nav > ul > li > a {
+    color: #f8d300;
+    font-weight: bold;
+    margin: 10px;
+    
+}
+
+header > h2{
+    color: #fff;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.logo{
+    display: none;
+}
+
+main{
+    height: 100%;
+}
+
+.hero{
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://img.freepik.com/foto-gratis/surtido-plano-deliciosa-comida-brasilena_23-2148739179.jpg?t=st=1730464979~exp=1730468579~hmac=1a70357cf1618ffd7e43fa8243cf6d20c1558e4c10b13c3a6415242fa6495bf5&w=1480);
+}
+
+.hero > h2 {
+    color: #fff;
+    font-size: xx-large;
+}
+
+.hero > p{
+    color: #fff;
+}
+
+#btn-hero{
+    background-color: #f8d300;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tarjetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.tarjet{
+    background-color: rgb(255, 255, 255);
+    width: 250px; 
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #727272;
+}
+
+.tarjet > .imgs{
+    height: 100%;
+    width: 100%;
+}
+
+.imgs > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.plato{
+    margin: 5px 20px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+}
+
+.plato > ul > li{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+}
+
+.plato > h2 {
+    color: #ff0000;
+    font-size: x-large;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+.section-2{
+    padding: 70px;
+}
+
+.Menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.Menu > h2 {
+    font-size: xx-large;
+}
+
+.section-3 > h2 {
+    font-size: xx-large;
+}
+
+.section-3{
+    padding: 70px;
+    background-color: #E9ECEF ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 450px;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px #aeaeae;
+}
+
+form > input {
+    padding: 10px;
+    border: 1px solid #b4b4b4;
+    border-radius: 4px;
+}
+
+#btn-form{
+    padding: 10px 0px;
+    border: none;
+    border-radius: 4px;
+    background-color: #089e08;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #383c44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 5px;
+}
+
+footer > ul {
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+    gap: 10px;
+}
+
+footer > ul > li {
+    list-style: none;
+    cursor: pointer;
+}
+
+footer > #info{
+    color: #f8d300;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#derechos {
+    color: #fff;
+}
+
+@media screen and (max-width : 600px) {
+    nav{
+        display: none;
+    }
+    .logo{
+        display: block;
+        margin: 20px;
+    }
+    .tarjet{
+        margin: 20px 0px;
+    }
+    .section-2{
+        padding: 0;
+    }
+    form{
+        width: 100%;
+        min-width: 250px;
+        min-height: auto;
+
+    }
+    .Menu > h2 {
+        margin: 30px 0px 0px 0px;
+    }
+    .hero > h2, .section-3 > h2, .Menu > h2{
+        font-size: 30px;
+        text-align: center;
+        margin: 20px;
+    }
+    .Menu{
+        gap: 0px;
+    }
+    .section-3 > p , .hero > p{
+        text-align: center;
+        margin: 0px 10px;
+    }
+    #derechos{
+        margin: 10px;
+        text-align: center;
+    }
+    footer > ul > li{
+        margin: 0px 10px;
+    }
+}
+

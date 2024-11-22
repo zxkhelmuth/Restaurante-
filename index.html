@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h2>Restaurante Gourmet</h2>
+        <nav id="menu-resposive">
+            <ul>
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">Reservaciones</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img onclick="mostrarmenu()" src="./img/bx-menu (1).svg" alt="menu">
+        </div>
+    </header>
+    <main>
+        <section class="section-1">
+            <div id="fondo">
+                <div class="hero">
+                    <h2>Bienvenido a nuestro Restaurante</h2>
+                    <p>Disfruta de la mejor experiencia gastronomica en un ambiente elegante y acogedor.</p>
+                    <button id="btn-hero">Conócenos</button>
+                </div>
+            </div>
+        </section>
+       <section class="section-2">
+            <div class="Menu">
+                <h2>Menú Destacado</h2>
+                <div class="tarjetas">
+                    <article class="tarjet">
+                        <div class="imgs">
+                            <img src="./img/view-delicious-onion-rings-dish.jpg" alt="">
+                        </div>
+                        <div class="plato">
+                            <h2>Plato Especial 1</h2>
+                            <p>Descripicion breve del plato.</p>
+                            <ul>
+                                <li>Ingrediente 1</li>
+                                <li>Ingrediente 2</li>
+                                <li>Ingrediente 3</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="tarjet">
+                        <div class="imgs">
+                            <img src="./img/view-delicious-steak-dish.jpg" alt="">
+                        </div>
+                        <div class="plato">
+                            <h2>Plato Especial 2</h2>
+                            <p>Descripicion breve del plato.</p>
+                            <ul>
+                                <li>Ingrediente 1</li>
+                                <li>Ingrediente 2</li>
+                                <li>Ingrediente 3</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="tarjet">
+                        <div class="imgs">
+                            <img src="./img/view-delicious-steak-dish (1).jpg" alt="">
+                        </div>
+                        <div class="plato">
+                            <h2>Plato Especial 3</h2>
+                            <p>Descripicion breve del plato.</p>
+                            <ul>
+                                <li>Ingrediente 1</li>
+                                <li>Ingrediente 2</li>
+                                <li>Ingrediente 3</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="tarjet">
+                        <div class="imgs">  
+                            <img src="./img/view-delicious-steak-dish.jpg" alt="">
+                        </div>
+                        <div class="plato">
+                            <h2>Plato Especial 4</h2>
+                            <p>Descripicion breve del plato.</p>
+                            <ul>
+                                <li>Ingrediente 1</li>
+                                <li>Ingrediente 2</li>
+                                <li>Ingrediente 3</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section> 
+        <section class="section-3">
+            <h2>Realiza tu Pedido</h2>
+            <p>Completa el formulario a continuacion para realizar un pedido:</p>
+            <form onsubmit="pedido(event)" id="form">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" required>
+                <label for="age">Edad</label>
+                <input type="number" id="age" required>
+                <label for="cedula">Cedula</label>
+                <input type="number" id="cedula">
+                <label for="pedido">Pedido</label>
+                <input type="text" id="pedid" required>
+                <label for="cant">Cantidad</label>
+                <input type="number" id="cant" required>
+                <label for="dir">Direccion</label>
+                <input type="text" id="dir" required>
+                <button type="submit" id="btn-form">Enviar Pedido</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <span id="info">Informacion</span>
+        <ul>
+            <li>Acerca de Nosotros</li>
+            <li>Servicios</li>
+            <li> Políticas</li>
+        </ul>
+        <span id="derechos">© 2024 Restaurante Gourmet. Todos los derechos reservados.</span>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
